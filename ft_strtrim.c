@@ -38,3 +38,4 @@ char    *ft_strtrim(const char *s1, const char *set)
         ft_strlcpy(copia, s1 + len1, len2 - len1 + 1);
         return (copia);
 }
+// recorta una cadena, 
