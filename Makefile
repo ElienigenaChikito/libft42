@@ -34,6 +34,9 @@ $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 
+bonus: $(OBJS) $(BONUS_OBJS)
+      ar rc $(NAME) $(BONUS_OBJS)
+
 %.o: %.c
 	$(CC) $(CFLAGS) $(SRC)
 
