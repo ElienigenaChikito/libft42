@@ -2,10 +2,10 @@
 
 void    ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-    t_node *temp;
-    t_node *prev;
+    t_list *temp;
+    t_list *prev;
     
-    temp = *lst, 
+    temp = *lst; 
     prev = NULL;
 
     if (temp && temp->data == value)  // Si el nodo a eliminar es el primero

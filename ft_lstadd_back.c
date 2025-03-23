@@ -2,7 +2,7 @@
 
 void    ft_lstadd_back(t_list **lst, t_list *new)
 {
-    t_node *new_node;
+    t_list *new_node;
     
     new_node = ft_lstnew(new);
     if (!new_node)
