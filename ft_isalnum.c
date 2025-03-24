@@ -18,3 +18,4 @@ int	ft_isalnum(int c)
 		return (c);
 	return (0);
 }
+// Funcion simple, devuelve "yes" si el caracter es alfabeto o numero.

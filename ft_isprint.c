@@ -18,3 +18,7 @@ int	ft_isprint(int c)
 		return (c);
 	return (0);
 }
+// Funcion simple, devuelve "yes" si es un caracter visible ASCII
+// 
+// (=) "letras - numeros - simbolos"
+// (!) "\n", "\t", "\0"

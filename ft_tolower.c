@@ -18,3 +18,5 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+// Funcion simple, suma 32 bits al caracter proporcionado,
+// para que cuadre con su posicion en "Minuscula" de la tabla ASCII.

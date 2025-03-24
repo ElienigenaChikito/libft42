@@ -18,3 +18,4 @@ int	ft_isalpha(int c)
 		return (c);
 	return (0);
 }
+//Funcion simple, devuelve "yes" si el caracter es una letra del alfabeto.

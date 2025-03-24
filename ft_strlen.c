@@ -21,3 +21,5 @@ size_t	ft_strlen(const char *s)
 		l++;
 	return (l);
 }
+// Funcion simple, recorre la string y anade l++ por cada caracter,
+// devuelve l.

@@ -18,3 +18,4 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+// Funcion simple, devuelve "yes", si el caracter esta en la tabla ASCII.
