@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eoteros- <eoteros-@student.42barcelon      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/24 14:07:25 by eoteros-          #+#    #+#             */
+/*   Updated: 2025/03/24 14:18:31 by eoteros-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-t_list  *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
-    if (!lst)  // Si la lista está vacía, retorna NULL
-        return NULL;
-    while (lst->next)  // Avanza hasta el último nodo
-        lst = lst->next;
-    return lst;
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }

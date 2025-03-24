@@ -17,16 +17,15 @@ char	*ft_strrchr(const char *s, int c)
 	int		i;
 	char	a;
 
-	a = c; /* combierte c, en un caracter */
-	i = ft_strlen(s); /* la longitud es de la string */
-	if (a == 0)	/* si no hay caracter que buscar, devuelve NULL */
-		return (NULL);
-	while (i >= 0) /* contar desde atras */
+	a = c;
+	i = ft_strlen(s);
+	if (a == 0)
+		return ((char *) &s[i]);
+	while (i >= 0)
 	{
 		if (s[i] == a)
-			return ((char *)&s[i]); /* devuelve la direccion de donde esta el caracter */
+			return ((char *)&s[i]);
 		i--;
 	}
 	return (0);
 }
-/* desde el final, busca la primera aparicion de c */

@@ -19,19 +19,18 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	j = 0;
 	if (little[0] == '\0')
-		return ((char *)big); /* Retorna la cadena completa 'big' si little es vacío */
-	while (big[j] && j < len)  /* Recorrer la cadena 'big' hasta llegar a la longitud 'len' o el final de la cadena */
+		return ((char *)big);
+	while (big[j] && j < len)
 	{
-		if (big[j] == little[0])  /* Si el primer carácter de 'big' es igual al primer carácter de 'little' */
+		if (big[j] == little[0])
 		{
 			i = 0;
-			while (little[i] && (big[j + i] == little[i]) && ((j + i) < len))  /* Comparar caracteres uno a uno de 'little' y 'big' */
+			while (little[i] && (big[j + i] == little[i]) && ((j + i) < len))
 				i++;
-			if (little[i] == '\0')  /* Si hemos llegado al final de 'little', es decir, toda la subcadena coincide */
-				return ((char *)big + j);  /* Devuelve la dirección de la primera aparición de 'little' en 'big' */
+			if (little[i] == '\0')
+				return ((char *)big + j);
 		}
-		j++;  /* Si no hubo coincidencia, pasa al siguiente carácter en 'big' */
+		j++;
 	}
-	return (NULL);  /* Si no se encuentra 'little' en 'big' en la distancia 'len', retorna NULL */
+	return (NULL);
 }
-/* encuentra una cadena de palabras, en otra str */

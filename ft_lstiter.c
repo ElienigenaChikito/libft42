@@ -1,13 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eoteros- <eoteros-@student.42barcelon      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/24 14:07:11 by eoteros-          #+#    #+#             */
+/*   Updated: 2025/03/24 14:17:26 by eoteros-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void    ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-    if (!lst || !f)  // Verificar que la lista y la función existen
-        return;
-
-    while (lst)
-    {
-        f(lst->content);  // Aplicar la función a cada nodo
-        lst = lst->next;
-    }
+	if (!lst || !f)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }

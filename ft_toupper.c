@@ -18,4 +18,3 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-/* resta 32 bits para convertir en una mayúscula */
