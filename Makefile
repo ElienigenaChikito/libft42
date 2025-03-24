@@ -6,7 +6,7 @@
 #    By: eoteros- <eoteros-@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 13:26:53 by eoteros-          #+#    #+#              #
-#    Updated: 2025/03/24 13:52:17 by eoteros-         ###   ########.fr        #
+#    Updated: 2025/03/24 15:45:49 by eoteros-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRC = ft_isalpha.c ft_isalnum.c ft_isprint.c ft_isascii.c ft_isdigit.c\
       ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c\
       ft_putnbr_fd.c\
 	  \
-	  ft_lstnew.c ft_lstadd_front ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
+	  ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
 	  ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c\
 
 OBJS = $(SRC:%.c=%.o)
