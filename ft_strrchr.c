@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 
 	a = c;
 	i = ft_strlen(s);
-	if (a == 0)
+	if (a == '\0')
 		return ((char *) &s[i]);
 	while (i >= 0)
 	{
@@ -29,3 +29,25 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
+// Busca en una str, la primera aparicion de un caracter desde el final.
+//
+//
+/*
+											||
+char	*ft_strrchr(const char *s, int c)	||
+{											||//El iterador es el final de la str.
+	int		i = ft_strlen(s);				||
+	char	a = c;							||//Convertimos el int prop, en un char.
+											||
+	if (a == 0)								||//Retornamos NULL si int es NULL.
+		return ((char *) &s[i]);			||
+	while (i >= 0)							||//Mientras iteramos en reversa,
+	{										|| buscamos una coincidencia, si la hay,
+		if (s[i] == a)						|| retornamos la direccion de la coincidencia.
+			return ((char *)&s[i]);			||
+		i--;								||//Si no encuentra coincidencia, retorna NULL
+	}										|| tambien.
+	return (0);								||
+}											||
+											||
+*/

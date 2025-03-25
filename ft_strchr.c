@@ -14,14 +14,14 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned char	ch;
-	int				i;
+	char	ch;
+	int		i;
 
 	i = 0;
-	ch = (unsigned char)c;
+	ch = (char)c;
 	while (s[i] != '\0')
 	{
-		if (s[i] == (char)ch)
+		if (s[i] == ch)
 			return ((char *) &s[i]);
 		i++;
 	}
@@ -29,3 +29,25 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *) &s[i]);
 	return (NULL);
 }
+// Busca en una str, la primera aparicion de un caracter.
+//
+//
+/*
+										 ||
+char	*ft_strchr(const char *s, int c) ||
+{										 ||// Primero convertimos a caracter el int prop.
+	char	ch = (char)c;				 ||// Creamos un iterador (si quieres).
+	int		i = 0;						 ||
+										 ||
+	while (s[i] != '\0')				 ||// Iteramos en la str.
+	{									 ||
+		if (s[i] == ch)					 ||// Si encontramos coincidencia, retornamos la
+			return ((char *) &s[i]);	 || direccion de donde ha pasado, sino, iteramos
+		i++;							 ||
+	}									 ||// Si ch es null, devuelve la direccion null
+	if (ch == '\0')						 ||
+		return ((char *) &s[i]);		 ||// Si no encuentra el caracter, tambien
+	return (NULL);						 || retorna null.
+}										 ||
+										 ||
+*/

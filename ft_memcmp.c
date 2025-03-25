@@ -29,3 +29,24 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+// Comprueba si hay diferencias entre 2 espacios de memoria. Sino retorna NULL.
+//
+//
+/*
+																		||
+int	ft_memcmp(const void *s1, const void *s2, size_t n)					||
+{																		||//Creamos espejos
+	const char	*str1 = (const char *) s1;								|| para trabajar.
+	const char	*str2 = (const char *) s2;								||
+	size_t		i = 0;													||//Creamos iterador
+																		||
+	while (i < n)														||//Iteramos en n,
+	{																	|| si hay diferencia
+		if ((char) str1[i] != (char) str2[i])							|| devuelvela.
+			return ((unsigned char) str1[i] - (unsigned char) str2[i]);	||
+		i++;															||//Si no hay,
+	}																	|| devuelve NULL.
+	return (0);															||
+}																		||
+																		||
+*/

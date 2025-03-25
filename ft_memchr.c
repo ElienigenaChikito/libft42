@@ -26,3 +26,23 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
+// En un espacio de memoria *s, encuentra la primer aparicion de c, en la longitud  n.
+//
+//
+/*
+													||
+void	*ft_memchr(const void *s, int c, size_t n)	||
+{													||//Crea un espejo de *s, para trabajar
+	char	*str = (char *)s;						||
+													||//Mientras iteramos en n,
+	while (0 < n)									|| busca coincidencia iterando en str.
+	{												||
+		if (*str == (char)c)						||//Si no encuentra diferencia,
+			return ((void *)str);					|| devuelve NULL.
+		str++;										||
+		n--;										||
+	}												||
+	return (0);										||
+}													||
+													||
+*/

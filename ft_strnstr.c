@@ -34,3 +34,32 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+// Busca dentro de la str "big", el primer momento en el que aparezca la str "little"
+// dentro de la len n.
+//
+/*
+																			||
+char	*ft_strnstr(const char *big, const char *little, size_t len)		||
+{																			||//Creamos 2
+	size_t	j = 0;															|| iteradores.
+	size_t	i;																||
+																			||//Si no hay
+	if (little[0] == '\0')													|| little, solo
+		return ((char *)big);												|| devuelve Big.
+	while (big[j] && j < len)												||
+	{																		||//Mientras
+		if (big[j] == little[0])											|| iteramos en
+		{																	|| big y len,
+			i = 0;															||
+			while (little[i] && (big[j + i] == little[i]) && ((j + i) < len))|//Si coinciden
+				i++;														|| itera.
+			if (little[i] == '\0')											|| Si little
+				return ((char *)big + j);									|| llega a NULL.
+		}																	|| Devuelve el
+		j++;																|| primer momento
+	}																		|| en el que
+	return (NULL);															|| aparece litte.
+}																			||
+																			||//Sino devuelve
+																			|| NULL
+*/
