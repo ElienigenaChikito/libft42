@@ -19,3 +19,17 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
+// Anade un nuevo nodo al la lista al principio.
+//
+//
+/*
+													||
+void	ft_lstadd_front(t_list **lst, t_list *new)	||
+{													||//Si no existe lista o nodo, retorna.
+	if (!lst || !new)								||
+		return ;									||//Mueve la lista a la derecha.
+	new->next = *lst;								||
+	*lst = new;										||//Anade new al principio.
+}													||
+													||
+*/

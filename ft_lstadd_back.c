@@ -19,3 +19,17 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 		*lst = new;
 }
+// Nos dan un nuevo argumento para a la lista, y lo anadimos al final.
+//
+//
+/*
+													||
+void	ft_lstadd_back(t_list **lst, t_list *new)	||
+{													||//Si existe lista, ves al final de ella, y anade
+	if (*lst)										|| "new".
+		ft_lstlast(*lst)->next = new;				||
+	else											||//Si no hay lista, anade "new".
+		*lst = new;									||
+}													||
+													||
+*/
