@@ -25,3 +25,22 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+//
+// 
+//
+/*
+															||
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))||
+{															||//Creamos una variable para poder iterar.
+	unsigned int	i = 0;									||
+															||//Si nos falta algun argumento, retorna NULL.
+	if (!s || !f)											||
+		return ;											||//Mientras iteras en la string,
+	while (s[i])											|| aplicamos, cambios con la funcion.
+	{														||
+		f(i, &s[i]);										||
+		i++;												||
+	}														||
+}															||
+															||
+*/

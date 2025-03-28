@@ -19,3 +19,17 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
+// Borra un nodo de la lista, primero elimina el contenido y luego libera
+// la memora utilizada.
+//
+/*
+														||
+void	ft_lstdelone(t_list *lst, void (*del)(void *))	||
+{														||//Si no hay lista, o funcion borrar.
+	if (!lst || !del)									|| retorna NULL.
+		return ;										||
+	del(lst->content);									||//Si hay ambas, elimina el contenido.
+	free(lst);											||
+}														||//Libera la memoria.
+														||
+*/

@@ -24,3 +24,22 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, "\n", 1);
 	}
 }
+// Iteras hasta el final de la Str que nos da, y le pone un final de linea '/n'
+// 
+// 
+/*
+										||
+void	ft_putendl_fd(char *s, int fd)	||//Itera en la Str, hasta llegar a su final,
+{										||
+	if (s)								|| cuando llega al final, escribe '/n'.
+	{									||
+		while (*s)						||
+		{								||
+			write(fd, s, 1);			||
+			s++;						||
+		}								||
+		write(fd, "\n", 1);				||
+	}									||
+}										||
+										||
+*/

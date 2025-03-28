@@ -24,3 +24,21 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
+// Devuelve el tamano de la lista.
+// 
+//
+/*
+								||
+int	ft_lstsize(t_list *lst)		||
+{								||//Itera sobre la lista, anadiendo
+	int	count = 0;				|| sumando el valor de count por cada vez 
+								|| que itera.
+	while (lst)					||
+	{							||//Retorna count.
+		count++;				||
+		lst = lst->next;		||
+	}							||
+	return (count);				||
+}								||
+								||
+*/

@@ -20,3 +20,18 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+// Itera en la lista, hasta el final.
+// 
+//
+/*
+									||
+t_list	*ft_lstlast(t_list *lst)	||
+{									||//Si la lista no existe, devuelve NULL.
+	if (!lst)						||
+		return (NULL);				||//Mientras lista exista, cambia al siguiente
+	while (lst->next)				|| nodo.
+		lst = lst->next;			||
+	return (lst);					||//Retorna el ultimo nodo.
+}									||
+									||
+*/

@@ -22,3 +22,20 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+// Itera sobre la lista, pero aplica una funcion proporcionada.
+// 
+//
+/*
+													||
+void	ft_lstiter(t_list *lst, void (*f)(void *))	||
+{													||//Si no hay lista/funcion, devuelve NULL.
+	if (!lst || !f)									||
+		return ;									||//Mientras lista exista, Aplica la funcion
+	while (lst)										|| dentro del contenido del primer nodo,
+	{												|| y pasa al siguiente nodo.
+		f(lst->content);							||
+		lst = lst->next;							||
+	}												||
+}													||
+													||
+*/

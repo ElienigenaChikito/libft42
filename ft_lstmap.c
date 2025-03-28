@@ -36,3 +36,36 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+// Creamos un diplicado de una lista, habiendo modificado su contenido con una funcion.
+// 
+// 
+/*
+																	||
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+{																	||//Creamos una lista vacia.
+	t_list	*new_list = NULL;										||//Creamos un nodo espejo con
+	t_list	*new_node;												|| el que trabajar.
+	void	*new_content;											||//Creamos el rellenador de
+																	|| contenido.
+	if (!lst || !f || !del)											||
+		return (NULL);												||//Si no nos han aportado algun
+																	|| parametro, devolvemos NULL.
+	while (lst)														||
+	{																||//Mientras lista exista, al
+		new_content = f(lst->content);								|| nodo espejo de contenido,
+		new_node = ft_lstnew(new_content);							|| le aplicamos la funcion.
+		if (!new_node)												||
+		{															||//Alojamos memoria en la lista
+			del(new_content);										|| nueva que queremos crear
+			ft_lstclear(&new_list, del);							||//Si no se pudo alojar memoria
+			return (NULL);											|| limpiamos el contenido que
+		}															|| duplicamos, eliminamos la lista
+		ft_lstadd_back(&new_list, new_node);						|| nueva y retornamos.
+		lst = lst->next;											||//Si se ha podido, anadimos el
+	}																|| codigo generado al final de
+	return (new_list);												|| la lista duplicada, y pasamos
+}																	|| al siguiente nodo.
+																	||
+																	||//Retornamos la nueva lista
+																	|| duplicada
+*/
