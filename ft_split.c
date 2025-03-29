@@ -109,12 +109,13 @@ char	**ft_split(const char *s, char c)
 		return (NULL);
 	return (array);
 }
-// Practicamente, la funcion mas dificil de la pelicula:
-// (1)(wordcount) Retorna el conteo de palabras, separando por el separador.
-// (2)(putword) Esta funcion es la que escribe palabra por palabra.
+//
+// Practicamente, la funcion mas dificil de la libft:
+// (1)(wordcount) Retorna el conteo de palabras, separando por el separador (count).
+// (2)(putword) Esta funcion es la que escribe palabra por palabra ([str]).
 // (3)(free) Libera memoria cuando hay error, para proteger el codigo.
-// (4)(fill_array) Utiliza (2) para rellenar una segunda str, donde guardaremos la str dividida.
-// (5)(split) Crea una segunda str y utiliza (4)
+// (4)(fill_array) Llena el (**array) utiliza (2) para rellenar cada (*array[str]).
+// (5)(split) Crea un segundo array (**array)||(*array[*str (1, 2, ...)]) y utiliza (4) para llenarla.
 //
 /*
 
